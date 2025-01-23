@@ -31,6 +31,12 @@ h3 {
   margin: 0.5em 0em;
 }
 
+h1 {
+  display: block;
+  justify-self: center;
+  margin: 1.5em;
+}
+
 button {
   background-color: black;
   color: white;

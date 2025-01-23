@@ -127,15 +127,10 @@ ul li:hover {
 
 /*gallery*/
 
-.festival-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 1em;
-}
-
+.festival-gallery,
 .artist-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1em;
 }
 
@@ -213,4 +208,26 @@ footer div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1em;
+}
+
+/*responsive settings*/
+
+/*tablet*/
+
+@media (max-width: 1199px) {
+  .festival-gallery,
+  .artist-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*movile*/
+
+@media (max-width: 768px) {
+  .festival-gallery,
+  .artist-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
 }
